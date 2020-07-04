@@ -11,10 +11,11 @@ public class MusicCompositions  {
     // create a constructor
     public MusicCompositions(String compositionName, String composerName, String todayDate, String areFluent)
     {
-        this.compositionName = compositionName;
-        this.composerName = composerName;
-        this.todayDate = todayDate;
-        this.areFluent = areFluent;
+        // this will ensure any Music composition object will be a bad state in memory
+        setCompositionName(compositionName);
+        setComposerName(composerName);
+        setTodayDate(todayDate);
+        setAreFluent(areFluent);
 
     }
     // this will return the composition name if called
@@ -23,8 +24,15 @@ public class MusicCompositions  {
     }
 
     // this will set the composition name in the constructor to the composition name specified
-    private void setCompositionName(String compositionName){
-        this.compositionName = compositionName;
+    private void setCompositionName(String compositionName) {
+        if(compositionName.isEmpty()){
+            // if there are no value entered in the text box
+            throw new IllegalArgumentException("There are no values");
+        }
+        else {
+            this.compositionName = compositionName;
+        }
+
     }
 
     // this will return the composer name
@@ -34,8 +42,17 @@ public class MusicCompositions  {
 
     // this will set the composer name to name in the parentheses
     private void setComposerName(String composerName){
-        this.composerName = composerName;
+        if(compositionName.isEmpty()){
+            // if there are no value entered in the text box
+            throw new IllegalArgumentException("There are no values");
+        }
+        else {
+            this.composerName = composerName;
+        }
+
     }
+
+
 
     // this will get the current today date input
     private String getTodayDate(){
@@ -44,7 +61,14 @@ public class MusicCompositions  {
 
     // this will set the today's date
     private void setTodayDate(String todayDate){
-        this.todayDate = todayDate;
+        if(compositionName.isEmpty()){
+            // if there are no value entered in the text box
+            throw new IllegalArgumentException("There are no values");
+        }
+        else {
+            this.todayDate = todayDate;
+        }
+
     }
 
     // this will get the current are fluent input.
@@ -54,7 +78,14 @@ public class MusicCompositions  {
 
     // this will get the are fluent.
     private void setAreFluent(String areFluent){
-        this.areFluent = areFluent;
+        if(compositionName.isEmpty()){
+            // if there are no value entered in the text box
+            throw new IllegalArgumentException("There are no values");
+        }
+        else {
+            this.areFluent = areFluent;
+        }
+
     }
 
     // this will prevent hashcode from appearing when being written to file
