@@ -1,12 +1,17 @@
 package mainpackage;
 
+import java.util.ArrayList;
+
 // create a music object that you add all the values of the textboxes to and you can then add the object to the array list
-public class MusicCompositions  {
+public class MusicCompositions extends ProgramGUI  {
     // setup your instance variables
     private String compositionName;
     private String composerName;
     private String todayDate;
     private String areFluent;
+
+    //
+  //  private ArrayList<MusicCompositions> musicCompositions = new ArrayList<>();
 
     // create a constructor
     public MusicCompositions(String compositionName, String composerName, String todayDate, String areFluent)
@@ -16,6 +21,14 @@ public class MusicCompositions  {
         setComposerName(composerName);
         setTodayDate(todayDate);
         setAreFluent(areFluent);
+
+    }
+    // overloaded constructor
+    public MusicCompositions(String todayDate, String areFluent)
+    {
+        // get a reference from the first Music compostion object
+        // do not remove the empty strings, they are to replace the empty parameters
+        this("", "", todayDate, areFluent);
 
     }
     // this will return the composition name if called
@@ -87,6 +100,10 @@ public class MusicCompositions  {
         }
 
     }
+    // this will return the
+  //  public ArrayList<MusicCompositions> getMusicArray(){
+  //      return musicCompositions;
+ //   }
 
     // this will prevent hashcode from appearing when being written to file
     @Override
