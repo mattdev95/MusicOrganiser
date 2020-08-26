@@ -65,7 +65,12 @@ It will be very cautious of people sharing personal information and will be very
 Target audience 
 The main audience is between 16 to 50, as this is relative to if the person can use the website or not. However, this should not be an issue, as the website should be designed for all and should not need instructions to use. 
 
+The reasons why it failed:
 
+- The project I designed was too complicated for my level of understanding.
+- I overstated my targets and though I could do anything (even if I am only finished first year of University).
+- I used Socket.io, Express and React to design a basic program. Designing the socket.io part of okay, but when I got to create the react app I failed, due to not understanding the fundamental concepts of networking and WebRTC (this however I will learn this year!)
+- This is an example of the socket.io code I used:
 
 
 
