@@ -63,7 +63,111 @@ If you want to talk to a person again, you can send them a friend request and yo
 It will be very cautious of people sharing personal information and will be very clear in the rules, that is not allowed and also show information on how to be safe online for people to educate themselves. 
 
 Target audience 
-The main audience is between 16 to 50, as this is relative to if the person can use the website or not. However, this should not be an issue, as the website should be designed for all and should not need instructions to use. 
+The main audience is between 16 to 50, as this is relative to if the person can use the website or not. However, this should not be an issue, as the website should be designed for all and should not need instructions to use.  
+
+Note: This document below was copied from a Word document. 
+Product backlog (all user stories)
+Sprint 1 in green (2 week)
+Epic (feature)	User Story	Acceptance criteria 
+
+Registration	As a student I want to create a new account without much hassle, so that I can begin chatting to new friends. 	
+•	Given sensitive data is being enter when entering information into the textboxes, then the data should be secured using an SSL encryption. 
+•	Must follow basic modern UX /UI practices. 
+•	Be protected from SQL injection
+	As a person with disabilities, I want to use my keyboard only to sign up, so that I can create an account without my parents getting involved. 
+    •	Ensure the textboxes are highlighted when going to the page.
+	As a person with poor vision, I want to easier to see the text on the screen, so I do not need someone else to read it out for me. 	•	Have the text able to be increased in size.
+•	Have the background be able to be changed from white to black 
+•	Have a button that can increase or decrease the text size, so that anyone can see the text on the screen.
+	As a person from an ethnic minority, I want to meet people who are real people and not bots that are threatening violence or spam, so that I feel safe on the internet. 	
+•	Must have some security questions, so that you are a real person and are only on to meet new people.
+
+
+Login	As a student I want to stay logged into the website, so that I can quickly access the website without logging in again. 	
+•	Must be protected from SQL injection. 
+•	Must have cookies and local storage to store text input information for next login event. 
+	As a person with disabilities, I want to log in quickly and easily, so that I do not have to type that much and click to multiple pages. 	
+    •	Have a login page on the same page as the home page.
+•	Have the text fields keyboard assessable.
+	As a person with poor vision, I want to use my screen reader, so that I can read the text on the screen; without using the text enlarger. 	
+    •	Have alt tags in the text fields, so that the screen reader can read all the text. 
+		
+Double web cam page	As a student I want my data to be secure, so that my personal information is not sold or hijacked by anyone. 	
+•	Advanced Encryption Standard (AES) 256-bit algorithm and padding
+•	Have a clear data policy, to show the user the data is being used and be transparent on how it is done. 
+	As a person with disabilities, I want to clearly see the other person chatting to me, so I can see exactly who they are and to be able to access the buttons without many clicks.	
+•	Must be a clear video quality and be able to turn of the camera.
+•	Must give permission for audio and video
+•	Must be intuitive and use very few pages. 
+	As a person with poor eye sight, I want to be not be discriminated because I cannot see the person or I show that I struggle to focus my eyes, so that the other person excepts me to who I am. 	
+    •	Must have a text alert to the other receiver on top of the video, so that the person knows what is the issue with the person. 
+	As a person from ethnic backgrounds, I want to not be threatened or bullied because of the colour of my skin or the clothes I wear, so that I am protected from violence. 	
+    •	Must have a basic Machine Learning detection algorithm to check for threating behaviour or any form of weapon or bad language can be removed by banning the user. A filter must be applied to anything that gets through the servers.
+•	If any threats to your race, sex, belief and so on will be banned from the site and will return you to Google. 
+	As a student, I want to know if I have permission to record their webcam or if not, I need to know that I cannot record, so that I can upload my conversion on social media. 	
+    •	Must have a permission message before you begin chatting to another person, to allow the other person to record you. If you do not give permission, the person who is calling you will have your webcam video blanked out and you will be given a warning message, that you cannot record, as the person you are talking to has not given permission. 
+	As person with disabilities, I want to be able to meet other people the same as me, so I can relate to my experiences and we can share information. 	
+    •	Ensure there is a textbox that you can enter the interests or traits you have, so that the matches will be related to the words you type in, if no words have been entered, then there will go to random people. 
+•	Ensure the textbox is easy to see and not hidden from view. 
+•	Ensure all aspects of the page, can be accessed with a keyboard. 
+	As a student, I want to chat to a few people and not take up much of my time, so that I can get on with my studies.  	
+    •	Ensure there is timer to talk to the person in a set time and then move onto to the next person, if they have not moved on already. 
+•	The timer must be readable and easy to use. 
+Chat room feature	As a student, I want to ensure the data that I talk about is kept secure, so that my data is not sold or misused. 	
+•	Should have the AES encryption algorithm to protect any sensitive information being entered, however this will be discouraged. 
+	As a person from an ethnic background, I want to ensure when talking to someone, I do not get bullied or be bombarded with hate.	
+    •	Must have a word detection algorithm that scans the string before it being send to the other client. If a bad word been found, then you will be banned from chatting from the person. 
+•	Must have a button to go next to a new person, so you can avoid any confrontation with the person. 
+	As a person with poor eyesight, I want to read the other persons text using a screen reader, so that I can understand the other person, without needing to enlarge text. 	•	Make sure the screen reader can easily read the text, without it skipping any information. 
+•	Optional to have a build in text reader, to read any text, when a message has been received. 
+	As a person with disabilities, I want to be able access the chat feature, so that I do not have to spend loads of time clicking to a different page. 	
+    •	Have the chat feature on the same page as the webcam feature.
+		
+		
+Privacy and data policy - As student, I want to access the ensure the data I share is safe and will not be sold, so I do not have to worry is anything I say slips through. 	
+•	Be clear about how the data is used and make sure to say how you are going to secure it and what algorithms have been used.
+•	Must follow GDDP and other EU safety laws.
+	As a person with disabilities, I want to ensure my condition will not create any bullying or threats against me, so that I feel safe. 	
+    •	Have a clear policy to show that any type of bulling behaviour is not aloud. 
+	As a person from an ethnic background, I want to be represented in the website and not be feel misplaced, so that I can feel that the product cares. 	
+    •	Ensure everyone is represented.
+		
+		
+		
+	
+Sprint 1 backlog - (34hr 15min to complete build) 52 hr sprint over less than 2 weeks
+User Story	Acceptance criteria 	Estimated completion time
+As a student I want to create a new account without much hassle, so that I can begin chatting to new friends. 	information into the textboxes, then the data should be secured using an SSL encryption. 
+•	Given sensitive data is being enter when entering 
+•	Must follow basic modern UX /UI practices. 
+•	Be protected from SQL injection	5hr 
+As a student I want to stay logged into the website, so that I can quickly access the website without logging in again. 	
+•	Must have cookies and local storage to store text input information for next login event. 
+•	Must be protected from SQL injection. 5hr 
+As a person with disabilities, I want to log in quickly and easily, so that I do not have to type that much and click to multiple pages. 	
+•	Have a login page on the same page as the home page.
+•	Have the text fields keyboard assessable.	4 hr 
+As a person with disabilities, I want to clearly see the other person chatting to me, so I can see exactly who they are and to be able to access the buttons without many clicks.	
+•	Must be a clear video quality and be able to turn of the camera.
+•	Must give permission for audio and video
+•	Must be intuitive and use very few pages. 	10 hr 
+As person with disabilities, I want to be able to meet other people the same as me, so I can relate to my experiences and we can share information. 	
+•	Ensure there is a textbox that you can enter the interests or traits you have, so that the matches will be related to the words you type in, if no words have been entered, then there will go to random people. 
+•	Ensure the textbox is easy to see and not hidden from view. 
+•	Ensure all aspects of the page, can be accessed with a keyboard. 	8 hr
+As student, I want to access the ensure the data I share is safe and will not be sold, so I do not have to worry is anything I say slips through. 	
+•	Be clear about how the data is used and make sure to say how you are going to secure it and what algorithms have been used.
+•	Must follow GDDP and other EU safety laws.
+•	This is an initial privacy policy, will be expanded in the next sprint. 	2hr 
+		
+	
+Daily Scrum template
+Meeting day: 
+Minutes:
+Notes:
+Remaining tasks to complete:
+Any issues?
+
 
 The reasons why it failed:
 
