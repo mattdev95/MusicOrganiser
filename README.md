@@ -65,7 +65,7 @@ It will be very cautious of people sharing personal information and will be very
 Target audience 
 The main audience is between 16 to 50, as this is relative to if the person can use the website or not. However, this should not be an issue, as the website should be designed for all and should not need instructions to use.  
 
-# Note: This document below was copied from a Word document. 
+# Note: This document below was copied from a Word document table. 
 
 Product backlog (all user stories)
 
@@ -172,7 +172,7 @@ Remaining tasks to complete:
 Any issues?
 
 
-The reasons why it failed:
+# The reasons why it failed:
 
 - The project I designed was too complicated for my level of understanding.
 - I overstated my targets and though I could do anything (even if I am only finished first year of University).
@@ -223,7 +223,7 @@ io.on('connection', socket => {
 
     server.listen(8000, () => console.log('server is running on port 8000'));
 
-Things that I have learned:
+# Things that I have learned:
 
 - Make sure to understand the concepts before applying them!
 - If I am only a beginner developer, do not start developing intermediate programs before fully understanding the more advanced concepts or knowlege on how something works.
