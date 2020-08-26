@@ -2,7 +2,7 @@ This program did not reach its finishes stages because of not having a design pl
 
 Majority of my programs I design and develop are planned and designed beforehand. There is an example of a project sprint plan I was undertaking during the summer below.
 
-This program was created to help organise music, so musicans can send off a list of music to venues who know without sheets music.
+This program was created to help organise music, so musicians can send off a list of music to venues who know without sheets music.
 
 Due to not having a design plan, there was no way to know how I am going to create the program. This was bound to fail and it did. 
 
@@ -40,7 +40,7 @@ The steps of the project
 8.	Create a basic neutral network that can detect objects on a webcam, first it would be phone that would need to be detected, violence as well and built up and training the network. If any behaviour was to be seen, then the screen will blank out totally and remove you from the website (ban). 
 9.	Start your sprints and use the designs that you have created to build the project. Make sure to include privacy policy and safety information. Make sure the website follows modern UX principles and if you want more information, you can use another tab rather than having all the information in one page like most stranger meetup sites. 
 
-#Here is the sprint plan for this program:
+# Here is the sprint plan for this program:
 
 Where the World Meet Project
 
@@ -79,13 +79,12 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
-// created a simple user object
+# created a simple user object
 const users = {};
-// when a person connects, we are notifying the server that somebody has connected 
-// and wants to keep track of this person 
-// the socket represents a connection, a person that has connected to the server and
-// gets represented as the socket object
-// each socket has a unique idenifier 
+# when a person connects, we are notifying the server that somebody has connected # and wants to keep track of this person 
+# the socket represents a connection, a person that has connected to the server and
+# gets represented as the socket object
+# each socket has a unique idenifier 
 io.on('connection', socket => {
     if (!users[socket.id]) {
         users[socket.id] = socket.id;
@@ -114,6 +113,8 @@ server.listen(8000, () => console.log('server is running on port 8000'));
 Things that I have learned:
 
 - Make sure to understand the concepts before applying them!
-- If I am only a beginner developer, do not start developing intermediate programs before fully understanding the basic concepts.
+- If I am only a beginner developer, do not start developing intermediate programs before fully understanding the more advanced concepts or knowlege on how something works.
 - Ask questions to more experienced developers, so I can learn from them. 
+- Developing is nothing like catering, in catering it is fine to think you can cook anything from following a recipe, but does not work in programming.
+- I have  learned that having transferrable skills does not mean you can do anything in programming. You have to learn from the ground up and keep working in steps until you are able to design the above program, rather than going full swing towards it. 
 
