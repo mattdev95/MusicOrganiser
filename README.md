@@ -73,18 +73,24 @@ The reasons why it failed:
 
 - This is an example of the socket.io code I used:
 
-    const express = require("express");
-    const http = require("http");
-    const app = express();
-    const server = http.createServer(app);
-    const socket = require("socket.io");
-    const io = socket(server);
-    // created a simple user object
+const express = require("express");
+
+const http = require("http");
+
+const app = express();
+
+const server = http.createServer(app);
+
+const socket = require("socket.io");
+
+const io = socket(server);
+
+// created a simple user object
 const users = {};
-    // when a person connects, we are notifying the server that somebody has connected # and wants to keep track of this person 
-    // the socket represents a connection, a person that has connected to the server and
-    // gets represented as the socket object
-    // each socket has a unique idenifier 
+// when a person connects, we are notifying the server that somebody has connected # and wants to keep track of this person 
+// the socket represents a connection, a person that has connected to the server and
+// gets represented as the socket object
+// each socket has a unique idenifier 
 io.on('connection', socket => {
     if (!users[socket.id]) {
         users[socket.id] = socket.id;
