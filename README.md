@@ -70,8 +70,50 @@ The reasons why it failed:
 - The project I designed was too complicated for my level of understanding.
 - I overstated my targets and though I could do anything (even if I am only finished first year of University).
 - I used Socket.io, Express and React to design a basic program. Designing the socket.io part of okay, but when I got to create the react app I failed, due to not understanding the fundamental concepts of networking and WebRTC (this however I will learn this year!)
+
 - This is an example of the socket.io code I used:
 
+const express = require("express");
+const http = require("http");
+const app = express();
+const server = http.createServer(app);
+const socket = require("socket.io");
+const io = socket(server);
+// created a simple user object
+const users = {};
+// when a person connects, we are notifying the server that somebody has connected 
+// and wants to keep track of this person 
+// the socket represents a connection, a person that has connected to the server and
+// gets represented as the socket object
+// each socket has a unique idenifier 
+io.on('connection', socket => {
+    if (!users[socket.id]) {
+        users[socket.id] = socket.id;
+    }
+    socket.emit("yourID", socket.id);
+    io.sockets.emit("allUsers", users);
+    socket.on('disconnect', () => {
+        delete users[socket.id];
+    })
+    // this is going to emit the an event called hey back out to the person who
+    // we are trying to call 
 
+    socket.on("callUser", (data) => {
+        // so the id we are going to call (userToCall), we are going to emit an event to that particular socket
+        // that event is going to be called Hello
+        io.to(data.userToCall).emit('Hello', {signal: data.signalData, from: data.from});
+    })
 
+    socket.on("acceptCall", (data) => {
+        io.to(data.to).emit('callAccepted', data.signal);
+    })
+});
+
+server.listen(8000, () => console.log('server is running on port 8000'));
+
+Things that I have learned:
+
+- Make sure to understand the concepts before applying them!
+- If I am only a beginner developer, do not start developing intermediate programs before fully understanding the basic concepts.
+- Ask questions to more experienced developers, so I can learn from them. 
 
