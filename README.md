@@ -65,9 +65,12 @@ It will be very cautious of people sharing personal information and will be very
 Target audience 
 The main audience is between 16 to 50, as this is relative to if the person can use the website or not. However, this should not be an issue, as the website should be designed for all and should not need instructions to use.  
 
-Note: This document below was copied from a Word document. 
+# Note: This document below was copied from a Word document. 
+
 Product backlog (all user stories)
+
 Sprint 1 in green (2 week)
+
 Epic (feature)	User Story	Acceptance criteria 
 
 Registration	As a student I want to create a new account without much hassle, so that I can begin chatting to new friends. 	
