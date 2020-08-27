@@ -193,22 +193,22 @@ const socket = require("socket.io");
 const io = socket(server);
 
 // created a simple user object
-const users = {};
-// when a person connects, we are notifying the server that somebody has connected # and wants to keep track of this person 
-// the socket represents a connection, a person that has connected to the server and
-// gets represented as the socket object
-// each socket has a unique idenifier 
-io.on('connection', socket => {
-    if (!users[socket.id]) {
-        users[socket.id] = socket.id;
-    }
-    socket.emit("yourID", socket.id);
-    io.sockets.emit("allUsers", users);
-    socket.on('disconnect', () => {
-        delete users[socket.id];
-    })
-    // this is going to emit the an event called hey back out to the person who
-    // we are trying to call 
+const users = {}; </br>
+// when a person connects, we are notifying the server that somebody has connected # and wants to keep track of this person </br>
+// the socket represents a connection, a person that has connected to the server and </br>
+// gets represented as the socket object </br>
+// each socket has a unique idenifier </br>
+io.on('connection', socket => { </br>
+    if (!users[socket.id]) { </br>
+        users[socket.id] = socket.id; </br>
+    } </br>
+    socket.emit("yourID", socket.id); </br>
+    io.sockets.emit("allUsers", users); </br>
+    socket.on('disconnect', () => { </br>
+        delete users[socket.id]; </br>
+    }) </br>
+    // this is going to emit the an event called hey back out to the person who </br>
+    // we are trying to call </br>
 
     socket.on("callUser", (data) => {
         // so the id we are going to call (userToCall), we are going to emit an event to that particular socket
