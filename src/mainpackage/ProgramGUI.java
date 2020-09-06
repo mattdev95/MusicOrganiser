@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class ProgramGUI implements ActionListener  {
@@ -41,6 +43,7 @@ public class ProgramGUI implements ActionListener  {
 
     // create a array list and pass it the music compositions object
     private ArrayList<String> musicCompositions = new ArrayList<String>();
+   // private LinkedList<String[]> musicCompositions = new LinkedList<>();
 
     public void setupGUI(){
         // create an instance of the of JFrame and the JPanel to use it
@@ -290,13 +293,7 @@ public class ProgramGUI implements ActionListener  {
             i++;
             // you have already converted the object to a string, that was one of the main issues with your code
             // you want to convert it to an array, so you can access the
-          //  String[] empty = new String[100];
-           // empty[i] = c;
 
-
-
-         //   String[] composeIndex = c;
-           // System.out.println(composeIndex);
             if(searchTextField.getText().contains(c)){
                 searchResultsTextField.setText(c);
             } else{
@@ -304,12 +301,6 @@ public class ProgramGUI implements ActionListener  {
             }
 
 
-           // searchResultsTextField.setText(String.valueOf(c));
-
-          //  System.out.println(c);
-          //  if(searchTextField.getText().equals(String.valueOf(c))){
-
-          //  }
         }
 
     }
@@ -317,7 +308,7 @@ public class ProgramGUI implements ActionListener  {
     {
         try {
 
-            // create a new file to access the logfile
+            // create a new file to access the file
             File compositionFile = new File("compositionfile.txt");
 
             // this will prevent the file from being overwritten, it will pass in the file and a boolean value

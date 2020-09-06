@@ -100,10 +100,6 @@ public class MusicCompositions extends ProgramGUI  {
         }
 
     }
-    // this will return the
-  //  public ArrayList<MusicCompositions> getMusicArray(){
-  //      return musicCompositions;
- //   }
 
     // this will prevent hashcode from appearing when being written to file
     @Override
