@@ -26,7 +26,7 @@ For safety, it would include bullying, nudity detection, violence warning and th
 
 The website will include all the modern UX features and be free of ads and data will not be sold. The website will have clear policy/ terms and homepage to say your data is safe and explain how you are doing it.
 
-Safety is the most important aspect of the website and will be deployed on AWS or another cloud platform, but not until fully finished for scalability and security. The website will be people funded and you can donate at the top right of the page, if the website is helping you
+Safety is the most important aspect of the website and will be deployed on AWS or another cloud platform, but not until fully finished for scalability and security. 
 This website will help the world connect to each other and we will not be divided by borders no longer.
 Including the chatroom will be encrypted and any inappropriate language will be removed and dealt with.
 The initial idea is for meeting musicians from around the world and you can choice what type of instrument or just pick a genre of music you like and it will show you a random person.
