@@ -3,6 +3,7 @@ package mainpackage;
 import java.util.ArrayList;
 
 // create a music object that you add all the values of the textboxes to and you can then add the object to the array list
+// Need to remove whitespace, will do this soon.
 public class MusicCompositions extends ProgramGUI  {
     // setup your instance variables
     private String compositionName;
